@@ -15,7 +15,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
             let a = document.createElement('a');
             a.innerText = 'show info';
-            a.href = '../posts/user-details.html?data=' + JSON.stringify(user);
+            a.href = 'user-details.html?data=' + JSON.stringify(user);
 
             div.appendChild(a);
             container.appendChild(div);
