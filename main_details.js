@@ -56,7 +56,7 @@ button.onclick =function (){ fetch(newUrl)
             let a = document.createElement('a');
             a.setAttribute('class','postTitle');
             a.innerHTML = `${post.id}` + '<br>'+  `${post.title}`;
-            a.href = '../comments/post-details.html?data=' + JSON.stringify(post);
+            a.href = 'post-details.html?data=' + JSON.stringify(post);
 
             userPost.appendChild(a);
             block.appendChild(userPost);
